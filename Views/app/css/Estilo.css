@@ -1,0 +1,1960 @@
+body
+{
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 11px;
+    margin: 0px auto auto auto;
+    color: #000;
+}
+p
+{
+    padding: 2px;
+    margin: 0px;
+}
+/*-----  NUEVOS ESTILOS ------- */
+#pNombDelProd{
+    color:red;
+    font-weight: bold;
+}
+.paginador1{
+    margin: 10px auto;
+    width: 40%;
+    text-align: center;
+    font-size: 20px;
+}
+.paginador1 a{
+    display:inline-block;
+    margin-right:5px;
+    padding: 5px;
+}
+.paginador1 a.activate{
+    font-weight: bold;
+}
+.paginador1 a[class='activate']:hover{
+    cursor: none;
+    background-color: transparent;
+    color: #337ab7;
+    cursor:default;
+}
+.paginador1 a:hover{
+    background-color: blue;
+    color:#fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+#resultado{
+    margin-left:20%;
+}
+.cont_imgUpdXS{
+    margin-top:-13px;
+} 
+ @media (max-width: 768px) {
+    .btnNav{
+    position: relative;
+    display: block;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-top: 0px;
+    }
+}
+
+@media (min-width: 768px){
+    .btnNav {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-right: 15px;
+
+    }
+}
+.btnNav{
+    color: #9d9d9d;
+    background-color: #222;
+    border-color:transparent;
+}
+.btnNav:hover{
+    color: #fff;
+    background-color: transparent; 
+}
+.modal-header, .modal-header h4, .close {
+      background-color: #5cb85c;
+      color:white !important;
+      text-align: center;
+      font-size: 30px;
+  }
+  #ContentAJAX .alert, #ContentAJAX_Reg .alert{
+    margin-bottom: 0px;
+  }
+  .modal-footer {
+      background-color: #f9f9f9;
+      text-align: right;
+  }
+  #formRegistro{
+    padding:20px;
+  }
+   #formRegistro input{
+    margin-bottom: 10px;
+    width: 90%;
+  }
+  #botonesRegistro{
+    display: flex;
+    justify-content: center;
+  }
+  #centrado{
+    margin-left:35%;
+    width: 30%;
+  }
+	.activacionCta{
+	margin-top:20px;
+	}
+	.linkAct{
+	background-color:#A9D0F5;
+	text-decoration:none;
+	color:#FFFFFF;
+	font-weight:bold;
+	}
+/* --------------FIN NUEVOS ESTILOS -------------------- */
+.imagenes
+{
+    margin: 20px;
+    border-collapse: collapse;
+    border: none;
+}
+.clrMgin
+{
+    margin-left:-15px;
+    margin-right:-15px;
+    margin-top:10px;
+}
+.img_show
+{
+    height:165px;
+    width:400px; 
+}
+#slideShowImages
+{
+    width:400px;
+    height:165px;
+    overflow:hidden;
+    display:none; 
+}
+.img_oculta
+{
+    height:0px;
+    width:0px; 
+}
+div.growlUI  
+{
+    background: url(../images/alertaIcon.png) no-repeat;
+    margin-top:30px;
+}
+div.growlUI h1, div.growlUI h2 {
+    color: white;
+    padding: 5px 5px 5px 75px;
+    text-align: left;
+}
+div.growlUI h2
+{
+    font-size:16px;
+}
+div.growlUI h1
+{
+    font-size:30px;
+    font-weight:bold;
+    color:#5cb85c;
+}
+
+#form_busqueda
+{
+    margin-right: 15px;
+}
+#text_busq
+{
+    background-color: transparent;
+    border-color: transparent;
+    color: #9d9d9d;
+    font-style: italic;
+    font-weight: bold;
+}
+
+#entorno_img
+{
+    margin: 20px 0 20px 0;
+}
+
+#header
+{
+    height: 173px;
+    background: url(../images/header.jpg) no-repeat center;
+}
+#logo
+{
+    padding: 15px;
+}
+#logo img
+{
+    width: 100%;
+    height:145px;
+}
+/*-------- Submenus------------*/
+#btnLogOut
+{
+    display:inline-block;
+    margin-top:10px;
+    font-size:11px;
+    font-weight:bold;
+    }
+ #btnLogOut:hover
+ {
+     text-decoration:none;
+ }
+.no_enlace
+{
+    color: #9d9d9d;
+    display:block;
+    margin-top:18px; 
+    margin-right:10px;   
+}
+
+.dropdown-submenu {
+    position: relative;
+}
+
+.dropdown-submenu>.dropdown-menu {
+    top: 0;
+    left: 100%;
+    margin-top: -6px;
+    margin-left: -1px;
+    -webkit-border-radius: 0 6px 6px 6px;
+    -moz-border-radius: 0 6px 6px;
+    border-radius: 0 6px 6px 6px;
+}
+
+.dropdown-submenu:hover>.dropdown-menu {
+    display: block;
+}
+
+.dropdown-submenu>a:after {
+    display: block;
+    content: " ";
+    float: right;
+    width: 0;
+    height: 0;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px 0 5px 5px;
+    border-left-color: #ccc;
+    margin-top: 5px;
+    margin-right: -10px;
+}
+
+.dropdown-submenu:hover>a:after {
+    border-left-color: #fff;
+}
+
+.dropdown-submenu.pull-left {
+    float: none;
+}
+
+.dropdown-submenu.pull-left>.dropdown-menu {
+    left: -100%;
+    margin-left: 10px;
+    -webkit-border-radius: 6px 0 6px 6px;
+    -moz-border-radius: 6px 0 6px 6px;
+    border-radius: 6px 0 6px 6px;
+}
+.listOverflow
+{
+    overflow: scroll;
+    overflow-x: hidden;
+    max-height:180px;
+    overflow-y:auto;
+}
+/*----------- Contenido derecho ---------------*/
+.ofertas
+{
+    width:100%;
+    margin-bottom:10px;
+    
+}
+.oferta .img_prod
+{
+    padding: 5px 0 5px 0;
+    display:block;
+    margin:0 auto;
+    width:150px;
+    height:150px;
+}
+.lkOferta
+{
+    font-size:10px;
+}
+.oferta_titulo
+{
+    font-size: 15px;
+    color: #b72c24;
+    font-weight: bold;
+    text-align:center;
+    margin-bottom:5px;
+    margin-top:5px;
+}
+.oferta_texto
+{
+    padding: 3px 0 3px 0;
+    font-size: 12px;
+    text-align:center;
+    line-height: 15px;
+    color:#2D922A;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.oferta_precio{
+    color: #B22222;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Arial Narrow;
+    padding-left:2px;
+}
+.oferta_enlace
+{
+    padding-top: 8px;
+    display:inline-block;
+    font-weight:bold;
+    padding-right:3px;
+}
+/*------------Adm_Usuarios---------------------*/
+.solapa_adm
+{
+    background:#ccffe5;
+    border-radius:3px;
+}
+
+/*------------Cuenta--------------------------*/
+.content_cuenta
+{
+    margin-top: 20px;
+    padding-left: 60px;
+}
+.contMod
+{
+    visibility:hidden;
+    height:0;
+}
+.cont_pass
+{
+    margin-top:10px;
+    margin-bottom:25px;
+    letter-spacing:1px;
+    font-size:12px;
+    visibility: hidden;
+    height:0px;
+}
+.linea_datos
+{
+    margin-bottom: 15px;
+}
+.pad
+{
+    padding:15px;
+}
+.btns
+{
+    visibility: hidden;
+    width:60%;
+    margin: 15px auto;
+    font-weight:bold;
+}
+.contMod input[type="text"], .cont_pass input[type="password"]
+{
+   height:18px;
+   padding:2px;
+   border-top:none;
+   border-left:none;
+   border-right:none;
+}
+.mg_lat
+{
+    margin-right:30px;
+}
+.contMod input[type="text"]
+{
+     width:250px;
+}
+.cont_pass input[type="password"]
+{
+    width:80%;
+}
+.contMod input[type="text"]:active
+{
+   border-top:none;
+   border-left:none;
+   border-right:none;
+}
+.colum_row
+{
+    display: block;
+    vertical-align: baseline;
+    font-size: 14px;
+    margin:5px;
+}
+.m_sup
+{
+    margin-top:15px;
+}
+.campo_datos
+{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 10%;
+    display: block;
+}
+.linea_sep
+{
+    width:60%;
+    height:1px;
+    border-bottom: 1px solid #ccc;
+    margin-left:30px;
+}
+.cont_button
+{
+    text-align:right;
+    margin-right:10%;
+    padding:5px;
+}
+.label_cuenta, .lbl_pass
+{
+    font-weight: bold;
+    display: inline-block;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+.lbl_pass
+{
+    color: #2D922A;
+}
+.label_cuenta
+{    
+    color: #20B2AA;
+}
+.label_datos_ct
+{
+    color: #708090;
+    display: inline-block;
+    margin-right: 10px;
+}
+.mod_campo, .linkTarj, .linkOutTarj
+{
+    font-style: italic;
+    font-size: 11px;
+}
+.linkOutTarj
+{
+    visibility: hidden;
+    width: 0;
+    margin-left:-10px;
+}
+.linkTarj,.linkOutTarj
+{
+    color: #2D922A;
+    font-weight: bold;
+    display:inline-block;
+    margin-right:8px;
+}
+.linkTarj
+{
+    margin-left: 5px;
+}
+/*---- Cuenta Carrito ----- */
+.tit_carrito, .tit_compras, .tit_adm
+{
+    margin: 20px 20px;
+}
+.tit_pendientes
+{
+    margin: 30px 20px 0 20px;
+}
+.imagen_min img 
+{
+    width:100%;
+    height:150px;
+}
+.mg_precio
+{
+    padding: 0;
+}
+.cr_detalle
+{
+    margin-top: 30px;
+    color: #008B8B;
+    font-weight: bold;
+}
+.elementos_carrito
+{
+    float: left;
+}
+.total_carrito
+{
+    float: right;
+    text-align: right;
+}
+.botones_carrito
+{
+    width: 40%;
+    margin: 50px auto;
+    display: block;
+}
+.margen_col
+{
+    margin-left: 5%;
+}
+.borde
+{
+    border-radius: 5px;
+    border: #ccc solid 1px;
+    box-shadow: 1px 1px 0px #C3BFCA;
+}
+.mgCont
+{
+    margin-left:5%;
+    margin-bottom:20px;
+    margin-top:20px;
+}
+@media (max-width: 768px) and (min-width: 660px){
+     .mgCont
+    {
+        width:25%;
+    }
+}
+@media (max-width: 659px) and (min-width: 550px){
+     .mgCont
+    {
+        width:35%;
+        margin-left:7.5%;
+    }
+}
+.imag-min
+{
+    display: block;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+.tit_prod
+{
+    text-align: center;
+    background: #3CB371;
+    color: white;
+    padding: 5px 0;
+    font-weight: bold;
+    font-size: 14px;
+    height:63px;
+}
+.icono_cerrar
+{
+    padding-top: 5px;
+    float: right;
+}
+.precio_prod
+{
+    color: #B22222;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: right;
+    display: block;
+    font-family: arial narrow;
+}
+.unid_compra
+{
+    color: #008080;
+    font-weight: bold;
+    font-size: 20px;
+    text-align: left;
+    font-family: arial narrow;
+}
+.limpiar_mg
+{
+    margin: 0 -15px;
+}
+/*----- Cuenta_Compras------*/
+
+.tit_compras
+{
+    color: #FFD700;
+}
+.listado_compras
+{
+    display: block;
+    margin: 30px auto;
+    width: 85%;
+    border-radius: 5px;
+    border: #ccc solid 1px;
+    box-shadow: 2px 2px 0px #C3BFCA;
+    font-family:Arial Narrow;
+}
+@media (max-width: 559px){
+     li.compras_elem1, li.compras_elem2
+        {
+           padding-bottom:5px;
+        }
+}
+@media (min-width: 560px){
+     li.compras_elem1, li.compras_elem2
+        {
+           padding-bottom:15px;
+        }
+}
+@media (max-width: 559px){
+     .linkProd
+        {
+            width:100%;
+        }
+}
+.mediaCant
+{
+    text-align:right;
+}
+@media (max-width: 559px){
+     .mediaCant, .mediaPrec
+        {
+            width:50%;
+            text-align:right;
+        }
+}
+li.compras_elem1, li.compras_elem2
+{
+    margin: 0;
+    padding-top: 15px;
+    font-size: 15px;
+    color: #CD5C5C;
+    font-weight: bold;
+    font-style: italic;
+}
+li.compras_elem1
+{
+    background: #E6E6FA;
+}
+/*----- Admin_Productos----- */
+
+.margen_del
+{
+    display: block;
+    margin: 0 -15px;
+}
+.form_prodAdd
+{
+    width: 95%;
+    margin: 10px auto;
+}
+.prop_col
+{
+    padding: 10px;
+    font-size: 15px;
+    height: 35px;
+}
+.prop_colTB
+{
+    padding: 10px;
+    font-size: 15px;
+    height: auto;
+}
+.prop_labels
+{
+    text-align: right;
+    float: left;
+    font-weight: bold;
+}
+.form_prodAdd input[type="text"], .form_prodAdd input[type="number"], .form_prodAdd input[type="email"],
+.form_prodAdd input[type="tel"], .form_prodAdd input[type="password"]
+{
+    height: 25px;
+    display: block;
+    padding: 4px;
+    width: 100%;
+    margin: 0 auto;
+}
+.form_prodAdd select
+{
+    height: 30px;
+    display: block;
+    padding: 2px;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 12px;
+}
+.botones_admProd
+{
+    width: 50%;
+    margin: 10px auto;
+    display: block;
+}
+.subt_prod
+{
+    margin-bottom: 10px;
+    margin-left: 5%;
+    width: 50%;
+    border-bottom: 1px #ccc solid;
+}
+.def_margen
+{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+.label_datos_prod
+{
+    color: #708090;
+    display: inline-block;
+    text-align: left;
+    border-bottom: #AFEEEE 1px solid;
+}
+.imagen_archivo
+{
+    width: 60%;
+    margin: 0 auto;
+    display: block;
+}
+.linea
+{
+    display: inline-block;
+}
+/*------------------------------oferte_content-----------------------*/
+
+/*--- Contacto----*/
+
+.col_contacto
+{
+    padding: 10px;
+}
+.oferte_content
+{
+    width: 600px;
+    height: 164px;
+    float: left;
+    padding: 0 0 0 50px;
+}
+.top_divider
+{
+    float: left;
+    width: 1px;
+    height: 164px;
+}
+
+/*---------------------Contenido Lateral y menús-----------------------------*/
+
+#login, #lista_menu
+{
+    margin: 0 -15px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 0px #C3BFCA;
+    border: 1px #ccc solid;
+}
+#lista_menu
+{
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+#lista_menu_marcas
+{
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    box-shadow: 1px 1px 0px #C3BFCA;
+    border: 1px #ccc solid;
+}
+#login
+{
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+
+#login .labels
+{
+    padding: 5px 0 5px 5px;
+    display: inline-block;
+    color: #2D922A;
+    font-weight: bold;
+    font-style: italic;
+    font-size:12px;
+}
+.imgPayPal
+{
+    padding: 5px 0 5px 0;
+    display: block;
+    margin: 0 auto;
+    width: 90px;
+    height: 90px;
+}
+.avisoPayPal
+{
+    margin:10px -15px;
+    background-color:#fff;
+    padding:5px;
+    color: #b72c24;
+}
+.payAviso, .payEnlace
+{
+    text-align:center;
+    font-weight:bold;
+    font-family:Arial Narrow;
+    font-size:13px;
+    letter-spacing:1px;
+}
+a.linkPay:hover
+{
+    text-decoration:none;
+}
+#login input[type="text"],#login input[type="password"]
+{
+    width: 90%;
+    height: 26px;
+    margin: 0 auto;
+}
+.but_login
+{
+    margin-bottom: 5px;
+}
+.navbar
+{
+    font-weight: bold;
+    margin-bottom: 0px;
+}
+
+/*----------------Contenido principal de página-------------*/
+#contenido_central
+{
+    margin: 0 -15px;
+    padding: 0;
+    height: auto;
+}
+/*-------------left_content------------------*/
+.left_content
+{
+    height: 100%;
+    background: #FCFAFA;
+}
+.title_box
+{
+    width: 100%;
+    height: 30px;
+    background: url(../images/menu_title_bg.gif) no-repeat center;
+    text-align: center;
+    font-size: 13px;
+    font-weight: bold;
+    color: #fff;
+    line-height: 30px;
+}
+/*----- Login ----- */
+.campo_invalido
+{
+    box-shadow:1px 1px 1px #B22222;
+    }
+.mg_boton
+{
+    margin-bottom:10px;
+    margin-top:40px;
+    display:block;
+}
+.form_log
+{
+    width: 85%;
+}
+/*---- Contacto----  */
+.reg_label
+{
+    text-align:left;
+    font-style: italic;
+    float: left;
+}
+.form_ryc, .form_log
+{
+    margin: 30px auto;
+    padding-top: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 3px 3px 0 #ccc;
+    display: block;
+   
+}
+.validacion
+{
+    color:Red;
+    font-style:italic;
+    font-weight:bold;
+    font-size:12px;
+}
+span.error
+{
+    color:#BC1010;
+    font-style:italic;
+    font-size:12px;
+    font-weight:bold;
+}
+.form_ryc
+{
+    width: 95%; 
+}
+.prop_columna
+{
+    padding: 10px;
+    font-size: 15px;
+    height: 40px;
+}
+.prop_columnaTB
+{
+    padding: 10px;
+    font-size: 15px;
+    height: auto;
+}
+.form_ryc input[type="submit"]
+{
+    margin-top: -20px;
+}
+/*--------left menu---------*/
+ul.left_menu li
+{
+    margin: -1px 0 0 -1px;
+}
+ul.left_menu li.even2 a
+{
+    border-radius: 0px;
+    height: 30px;
+    background: url(../images/checked.png) no-repeat left #dad0d0;
+    background-position: 5px 5px;
+    border-bottom: 1px #FFFFFF solid;
+    color: #504b4b;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+ul.left_menu li.even1 a
+{
+    border-radius: 0px;
+    height: 30px;
+    background: url(../images/checked.png) no-repeat left #eee6e6;
+    background-position: 5px 5px;
+    border-bottom: 1px #FFFFFF solid;
+    color: #504b4b;
+    padding: 0 0 0 30px;
+    line-height: 25px;
+}
+ul.left_menu li.even1 a:hover, ul.left_menu li.even2 a:hover
+{
+    background: url(../images/checked.png) no-repeat left #7bbcc7;
+    color: #FFFFFF;
+    background-position: 5px 5px;
+}
+
+.border_box
+{
+    width: 194px;
+    height: auto;
+    text-align: center;
+    border: 1px #6da6b1 solid;
+}
+.product_title
+{
+    color: #ea2222;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+}
+.product_title a
+{
+    text-decoration: none;
+    color: #ea2222;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+}
+.product_title a:hover
+{
+    color: #064E5A;
+}
+.product_img
+{
+    padding: 5px 0 5px 0;
+}
+.prod_price
+{
+    padding: 5px 0 5px 0;
+}
+
+span.reduce
+{
+    color: #999999;
+    text-decoration: line-through;
+}
+
+/*-------------center content-------------*/
+.center_content
+{
+    padding: 30px;
+    z-index: 1;
+}
+.center_content h2
+{
+    font-weight: bold;
+}
+.center_content p
+{
+    font-style: italic;
+    font-size: 1.3em;
+    padding: 5px;
+    /*color: #585858;*/
+    font-weight: bold;
+}
+
+.center_title_bar
+{
+    height: 33px;
+    line-height: 33px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+    background: #585858;
+    margin: 0 -15px;
+    text-align: center;
+}
+
+/*----------------------right content--------------*/
+.right_content
+{
+    background: #FCFAFA;
+    padding: 5px 0 0 0;
+    float: right;
+}
+span.detls
+{
+    color: #ea2222;
+    font-weight:bold;
+    font-family: Arial Narrow;
+}
+.cart_icon a img
+{
+    width:48px;
+    height:48px;
+}
+.linkCarto
+{
+    display: inline-block;
+    padding-bottom: 5px;
+    font-size: 13px;
+}
+.noProd 
+{
+    margin-top:70px;
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  .cart_icon a img  
+  {
+      width:37px;
+      height:37px;
+               }
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+     .oferta .img_prod
+    {
+        width:100px;
+        height:100px;
+    }
+}
+.carrito_compras
+{
+    height: 84px;
+    text-align: center;
+    background: url(../images/cart_bg.gif) no-repeat center;
+    display:block;
+}
+.cart_title
+{
+    font-size: 12px;
+    color: #847676;
+    font-weight: bold;
+    padding: 8px 0 0 0;
+}
+.cart_details
+{
+    float: left;
+    padding: 5px 0 0 15px;
+    text-align: left;
+}
+.cart_icon
+{
+    display: inline-block;
+    margin-right: 15px;
+    float: right;
+    padding: 5px 0 0 5px;
+}
+span.border_cart
+{
+    width: 100%;
+    height: 1px;
+    margin: 3px 0 3px 0;
+    display: block;
+    border-top: 1px #999999 dashed;
+}
+
+/*---------Productos----------*/
+.paginador, .pagMP
+{
+    display:block;
+    text-align:center;
+    clear: both;
+}
+.avisoCar
+{
+    font-size:15px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    font-family: Arial Narrow;
+    letter-spacing: 0.5px;
+}
+.paginador
+{
+    font-size:medium;
+}
+.pagMP span.CurrentPag
+{
+    font-size:10px;
+    cursor: default;
+    color: #337ab7;
+    font-weight:bold;
+    font-size:12px;
+    display: inline-block;
+    padding: 2px 4px;
+    border-radius: 5px;
+}
+@media (min-width: 768px)
+{
+    .payment{
+            margin-top: 5px;
+    }
+}
+@media (max-width: 767px)
+{
+    .payment{
+            float:left;
+            margin-top:60px;
+    }
+}
+@media (max-width: 767px)
+{
+    .contImg{
+            margin-top:25px;
+    }
+}
+.payment img
+{
+    width:90px;
+}
+.sinStock, .noStock
+{
+    color: #337ab7;
+    font-style:italic;
+    font-weight:bold;
+    text-align:center;
+}
+.noStock
+{
+    font-size:18px;
+}
+.sinStock
+{
+    margin-top:20px;
+    height:62px;
+    font-size:16px;
+}
+span.CurrentPage
+{
+    color: #fff;
+    cursor: default;
+    background-color: #337ab7;
+    border-color: #337ab7;
+    display:inline-block;
+    padding:6px 12px;
+    border-radius:5px;
+}
+a.PageNumbers
+{
+    display:inline-block;
+    padding:2px 8px;
+}
+span#ContentInicio_ListaProductos_DataPager
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+.cantidad
+{
+    margin-top:-2px;
+}
+.cantidad input[type="number"]
+{
+    width: 45px;
+    height: 19px;
+    margin-right: 3px;
+    margin-left: -15px;
+    border-radius:3px;
+}
+.cantidad span
+{
+    color:#337ab7;
+    font-weight: bold;
+    font-size:12px;
+}
+span.aviso
+{
+    font-family:Arial Narrow;
+    color:#ea2222;
+    font-size:13px;
+}
+.contStock
+{
+    height:28px;
+}
+.btnCard
+{
+    font-size:14px;
+    margin-top:-36px;
+}
+.btnCard a span 
+{
+    color:#5cb85c;
+}
+.btnCard a
+{
+    font-weight:bold;
+}
+.enlace_prod
+{
+    width: 100%;
+    margin-top: 40px;
+    font-size: 11px;
+    font-style: italic;
+    float: right;
+    margin-right: -40%;
+}
+.enlace_prod>span
+{
+    display:inline-block;
+        
+}
+.enlace_prod>a
+{
+    display:inline-block;
+    margin-left:4px;
+    cursor:pointer;
+}
+.cs
+{
+    width:100%;
+}
+.botonesGroup
+{
+    margin-top:10px;
+    height:72px;
+}
+.producto_descr
+{
+    color: #b72c24;
+    padding: 5px 0 5px 0;
+    font-weight: bold;
+    font-size: 12px;
+    height:70px;
+}
+.producto_descr>span
+{
+    word-wrap: break-word;
+}
+@media (max-width: 768px) {
+    .producto_descr{ 
+                     margin-top:20px;
+                     margin-bottom:20px;
+                    }
+}
+.position_item1
+{
+    z-index: 1;
+}
+.position_item2
+{
+    z-index: 4;
+}
+.item_prod
+{
+    display:block;
+    padding-left: -15px;
+    padding-right: -15px;
+    display: block;
+    border: 1px solid #585858;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+.cl_padding
+{
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 0;
+}
+.contPrecios
+{
+    color: #ea2222;
+    font-weight: bold;
+    text-align: right;
+    margin-right:-18px;
+    font-family: arial narrow;
+    float:right;
+}
+span.price
+{  
+    font-size: 35px;    
+    height:10px;   
+}
+@media (min-width: 769px) {
+    .cuotas
+    {
+        font-size: 13px;
+    }
+}
+@media (max-width: 768px) {
+  span.price { font-size: 45px;
+               display:block;
+               float:none; 
+               margin-top:-10px;
+               text-align:center;}
+}
+  .cuotas {
+            letter-spacing:1px;
+           }
+@media (max-width: 768px)
+{
+    .cuotas 
+    {
+        margin-top:-18px;
+        font-size:15px;
+    }
+}
+@media (max-width: 768px) {
+  .contPrecios {
+               width:100%;
+              }
+}
+@media (min-width: 769px) {
+  .contPrecios {
+                text-align:right;}
+}
+@media (min-width: 992px) and (max-width: 1200px) {
+  span.price { font-size: 28px;
+               }
+}
+@media (min-width: 440px) and (max-width: 768px) 
+{
+    .bt_accion
+    {
+       width: 150px;
+    }     
+} 
+.aviso
+{
+    font-size:12px;
+    color:#ea2222;
+    font-style:italic;
+}
+@media (max-width: 440px)
+{
+    .bt_accion
+    {
+       width: 88px;
+       font-size:small;
+    }
+}
+@media (max-width: 440px)
+{
+    .bt_Paccion
+    {
+       font-size:small;
+    }
+}
+@media (max-width: 768px) {
+  .contImg .img_prod { width:100%;
+              height: 100%;}
+}
+.contImg .img_prod
+{
+    padding: 5px 0 5px 0;
+    display:block;
+    margin:0 auto;
+}
+@media (min-width: 768px)
+{
+    .contImg .img_prod
+    {
+        width:150px;
+        height:150px;
+    }
+}
+.grupo_bt
+{
+    margin-bottom: 8px;
+}
+.bt_Paccion
+{
+    margin-left: 25%;
+    width: 50%;
+}
+.bt_accion,.bt_Paccion
+{
+    display: inline-block;
+    font-family: Arial;
+    color: #1c4a52;
+    font-weight: bold;
+}
+.img_azul
+{
+    color: Blue;
+}
+.img_amarillo
+{
+    color: Yellow;
+}
+.specifications
+{
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 18px;
+    text-align: center;
+}
+.specifications div
+{
+    margin: 6px;
+}
+#productos_cont
+{
+    margin: 10px auto;
+    width: 100%;
+    float: left;
+}
+.prod_price_big
+{
+    padding: 0 30px 5px 0;
+    text-align: center;
+    margin-top: 10px;
+}
+.img_centrada
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+a.comprar
+{
+    width: 76px;
+    height: 27px;
+    display: block;
+    float: left;
+    margin: 0 0 0 10px;
+    background: url(../images/favs.gif) no-repeat left;
+    padding: 0 0 0 33px;
+    text-decoration: none;
+    line-height: 27px;
+    color: #1c4a52;
+}
+span.blue
+{
+    color: #5F9FAB;
+}
+/*------- CompraProducto--------*/
+.cont_Prod
+{
+    margin:10px auto;
+    border: 1px solid #008B8B;
+    border-radius:10px;
+    width:90%;
+    
+}
+.pay
+{
+    margin-bottom:10px;
+}
+.cont_Cuotas
+{
+    float: right;
+    margin-top: 5px;
+    color: #B22222;
+    font-family: arial Narrow;
+    font-size: 15px;
+    font-weight: bold;
+    letter-spacing:1px;
+}
+@media (max-width: 557px)
+{
+    .botonesCompra input[class*="btnCarrII"]
+    {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    }   
+} 
+@media (min-width: 558px)
+{
+    .botonesCompra input[class*="btnCarrII"]
+    {
+    width:120px;
+    float:right;
+    }   
+} 
+.anchoCont
+{
+     margin:10px auto;
+}
+@media (min-width: 558px){
+    .anchoCont
+    {
+        width:50%;
+    }
+}
+@media (max-width: 557px){
+    .anchoCont
+    {
+        width:100%;
+    }
+}
+.tituloProd
+{
+    text-align: center;
+    font-size:30px; 
+    color:#fff;
+    font-weight:bold;
+    background:#008B8B;
+    margin-left:-15px;
+    margin-right:-15px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.imgCenter
+{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    margin-top: 15px;
+    
+}
+.ofertaProd
+{
+    color:#2D922A;
+    font-size:15px;
+    font-weight:bold;
+    text-align:right;
+}
+.precioTotal
+{
+    color:#B22222;
+    font-size:25px;
+    text-decoration:line-through;
+    text-align:right;
+    font-family:Arial Narrow;
+}
+.precioProducto>span
+{
+    color: #B22222;
+    font-weight: bold;
+    font-size: 40px;
+    display:inherit;
+    text-align:right;
+    font-family:Arial Narrow;
+}
+.botonesCompra
+{
+    width:80%;
+    margin: 5px auto;
+}
+.botonesCompra input[class*="btnCarrII"],.botonesCompra input[class*="btnCarr"]
+{
+    font-size:17px;
+    border-radius:8px;
+    padding:6px;
+}
+.botonesCompra input[class*="btnCarr"]
+{
+    width:120px;
+    float:right;
+}
+@media (min-width: 558px)
+{
+    .botonesCompra input[class*="btnCarr"]
+    {
+    width:120px;
+    }   
+}
+@media (max-width: 557px)
+{
+    .botonesCompra input[class*="btnCarr"]
+    {
+    width: 100%;
+    margin-top: 10px;
+    float: left;
+    }   
+}
+.cont_garant
+{
+    font-size:large;
+    color:#31708f;
+    text-align:center;
+    font-weight: bold;
+}
+.txGarantia
+{
+    font-style: italic;
+    color: #2D922A;
+    text-shadow: 0.5px 0.5px 1px;
+    font-weight:normal;
+}
+.txtStock
+{
+    font-size:20px;
+    font-weight:bold;
+    padding:10px;
+    color:#696969;
+    font-family: Arial Narrow;
+}
+.margin
+{
+    margin-bottom:20px;
+   margin-top: 20px;
+}
+.tit_descript
+{
+    width:50%;
+    border-bottom:1px solid #ccc;
+    font-size:30px;
+    font-weight: bold;
+}
+.tit_comentarios
+{
+    font-size:17px;
+    font-weight:bold;   
+    font-style:italic;
+    letter-spacing:2px;
+}
+.contDescr
+{
+    margin-top:30px;
+    margin-bottom:20px;
+}
+.textDescript
+{
+    padding:20px;
+    font-size:18px;
+    font-style:italic;
+    color:#b72c24;
+    text-shadow: 0.5px 0.5px 1px;
+}
+.textDescript>span
+{
+    word-wrap: break-word;
+    display:inline;
+}
+.pnlConsulta
+{
+    width:90%;
+    margin: 15px auto;
+}
+.btnAddCons
+{
+    display:block;
+    margin-top:20px;
+    text-align:center;
+    margin-left:20px;
+}
+.margenes
+{
+    margin-top:60px;
+    margin-bottom:30px;
+}
+.dataUser
+{
+    font-style:italic;
+    font-size:12px;
+    font-weight:bold;
+    margin-bottom:5px;
+}
+.txConsulta
+{
+    font-size:12px;
+    margin-bottom:5px;
+}
+.cont_consultas
+{
+    border-bottom: 0.2px solid #ccc;
+    margin-bottom:10px;
+    padding: 5px;
+}
+.noCons
+{
+    display:block;
+}
+.mg_top
+{
+    margin-top:20px;
+}
+.txRespuesta
+{
+    margin-left:15px;
+    font-size:12px;
+    margin-top:10px;
+    font-weight:bold;
+}
+/*--------------footer----------------*/
+.footer
+{
+    color: #999;
+    margin: 0 -15px;
+    text-align: center;
+    padding-top: 30px;
+    font-size: 15px;
+    font-weight: bold;
+    height: 65px;
+    background: url(../images/footer_bg.gif) repeat-x top;
+    z-index: 2;
+}
+/*--------------PayPal----------------*/
+.tabPay, .tabVenta
+{
+    margin: 50px auto;
+    border-collapse: collapse;
+    border-radius: 5px;
+    background:white;
+    font-size:15px;
+    text-align:center;
+    font-weight: bold;
+}
+.avisoPago
+{
+    margin-bottom:30px;
+    font-size:14px;
+    font-family:Arial Narrow;
+    letter-spacing: 1px;
+}
+.titPayPal
+{
+    margin-top:20px;
+    margin-bottom:30px;
+    font-weight:bold;
+    color:#b72c24;
+    padding-left:10px;
+    font-size:35px;
+}
+.tabPay
+{
+    width:40%;
+}
+tr.tabFila
+{
+    color: #2F4F4F;
+    font-family: arial narrow;
+    border-bottom: 0.5px dotted #ccc;
+}
+td.tabFoot
+{
+    color:#2D922A;
+}
+tr.tabHeader
+{
+    background-color: #1E90FF;
+    color:White;
+}
+.tabPay td
+{
+    padding:5px;
+}
+#formPayPal input[type="image"]
+{
+    display:block;
+    margin: 10px auto;
+}
+a#linkCancel
+{
+    display:inline-block;
+    float:right;
+    margin-top:80px;
+    font-size:15px;
+    margin-right:30px;
+    font-style:italic;
+    color:#a94442;
+}
+/*--------------CancelaCompra----------------*/
+p.infoText
+{
+   font-weight:bold;
+   color: #337ab7;
+}
+.avisoCanc
+{
+    margin-top: 40px;
+}
+.avisoCanc p 
+{
+    font-size: 15px;
+    font-style:normal;
+    letter-spacing: 1px;
+}
+p.nombEmpr
+{
+    color:#A9A9A9;
+    font-style:italic;
+}
+/*--------------Adm_VentasUpd----------------*/
+
+.ubicLine
+{
+    margin-left:15%;
+    margin-top:40px;
+}
+.mgSup
+{
+    margin-top:40px;
+}
+.tabVenta
+{
+    width:85%;
+}
+table.tabVenta td
+{
+    padding:6px;
+}
+tr.tabHd
+{
+    background-color:#2D922A;
+    color:White;
+    
+}
+span.contVentas
+{
+    font-family:Arial Narrow;
+    letter-spacing: 0.5px;
+}
+span.lblVentas
+{
+    font-style: italic;
+    color:#008B8B;
+}
+/****** MedioPago*******/
+
+p.avisoExito
+{
+    color: #337ab7;
+    margin-top:15px;
+    font-size:15px;
+    font-weight:bold;
+}
+.imgPay
+{
+    width:50px;
+    height:50px;
+}
+p.codCompra
+{
+    float:right;
+    color: #b72c24;
+    font-weight:bold;
+}
+p.sucursales
+{
+    font-weight:bold;
+    letter-spacing:1px;
+}
+p.costoEnvio
+{
+    font-family:Arial Narrow;
+}
+p.noEnvio, p.precioEnvio
+{
+    text-align:center;
+    font-size:20px;
+    font-style: italic;
+}
+p.noEnvio
+{
+    color:#ccc;
+}
+.contMargs
+{
+    margin-top:30px;
+    margin-bottom:40px;
+}
+div.contMargs a 
+{
+    font-size:12px;
+    font-weight:bold;
+}
+p.precioEnvio
+{
+    color:#337ab7;
+}
+.modXs 
+{
+    padding-top:3px;
+    padding-bottom:3px;
+}
+.mrgTop h4
+{
+    padding-top: 60px;
+    margin-top:20PX;
+}
+@media (max-width: 768px){
+     .butBuscar
+    {
+        margin-top:10px;
+        margin-bottom:20px;
+    }
+}
+/*--------------ConcretaCompra----------------*/
+h3.compraOK
+{
+    margin-top:30px;
+    margin-bottom:50px;
+    font-style:bold;
+}
+.idTrans
+{
+    color:Green;
+    font-weight:bold;
+}
+.avisoComp
+{
+    margin-top: 20px;
+}
+.avisoUsu
+{
+    margin-top:60px;
+    font-family:Arial Narrow;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+/*---------------AdmConsultas--------------------*/
+tr.tabHead 
+{
+    border-top: solid 1px #2D922A;
+    border-bottom: solid 1px #2D922A;
+    color: #2D922A;
+    font-family: Arial Narrow;
+    font-size:20px;
+    letter-spacing:2px;
+}
+.carta
+{
+    color:#EEBC37;  
+    margin-left:10px;
+    font-size:15px;
+}
+.fontFila
+{
+    font-family: Arial Narrow;
+    letter-spacing:1px;
+    font-size:14px;
+}
+.fontFila a
+{
+    color:#2F4F4F;
+}
+.fontFila a:hover
+{
+    text-decoration:none;
+}
